@@ -32,7 +32,7 @@ public class Test {
     public static void main(String[] args){
         test(new IOFileSearcher()); // doesn't use any memory, but the slowest search time
         test(new InMemFileSearcher()); // save all file in memory, but faster search time
-        test(new CacheFileSearcher()); // save used data that was already calculated, search time and memory are worth the tradeoff
+        test(new CacheFileSearcher()); // Winner! save used data that was already calculated, search time and memory are worth the tradeoff
 
         System.out.println("done");
     }
