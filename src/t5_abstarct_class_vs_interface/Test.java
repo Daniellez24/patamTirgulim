@@ -137,12 +137,12 @@ public class Test {
                 // or just: c.accept(it.next());
             }
 
-            m();
+           // m();
         }
-
-        private void m(){ // can call a private method in an interface within another method in the interface
-            //..
-        }
+          //TODO if you want to use this, fix it first. project cant compile with it
+//        private void m(){ // can call a private method in an interface within another method in the interface
+//            //
+//        }
     }
 
     interface Collection<E> extends Iterable<E>{
