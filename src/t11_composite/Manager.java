@@ -7,7 +7,7 @@ import java.util.List;
 public class Manager extends Employee {
 
     /**
-     * With this data starcture we make sure that we are not adding employees
+     * With this data structure we make sure that we are not adding employees
      * that we have added in the past.
      * This is static to be shared between all the managers
      **/
