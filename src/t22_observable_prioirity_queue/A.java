@@ -1,9 +1,8 @@
-package t21_observable_collection;
+package t22_observable_prioirity_queue;
 
 import java.util.Observable;
 
-/**Data struct that will notify us when some things changed
- * */
+/**Data structure that will notify us when some things changed*/
 public class A extends Observable{
     int x;
 
