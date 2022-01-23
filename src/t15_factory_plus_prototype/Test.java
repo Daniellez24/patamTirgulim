@@ -15,7 +15,7 @@ public class Test {
         while(!(input=in.readLine()).equals("done")){ // we'd like to create an Object that a client asks, as long as he doesn't write "done"
 
 //            if(input.equals("dev"))
-//                e=new Deceloper();
+//                e=new Developer();
 //            if(input.equals("man"))
 //                e=new Manager();
             //... o(n) checks...
