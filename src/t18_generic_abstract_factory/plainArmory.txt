@@ -1,0 +1,2 @@
+Sword   t18_generic_abstract_factory.PlainSword
+Shield  t18_generic_abstract_factory.PlainShield

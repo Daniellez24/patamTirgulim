@@ -1,0 +1,2 @@
+Sword   t18_generic_abstract_factory.Lightsaber
+Shield  t18_generic_abstract_factory.DeflectorShield
