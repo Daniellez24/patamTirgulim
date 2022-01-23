@@ -1,4 +1,4 @@
-package tt21_observable_collection;
+package t21_observable_collection;
 
 import java.util.Collection;
 import java.util.LinkedList;

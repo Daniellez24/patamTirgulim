@@ -1,7 +1,6 @@
-package tt21_observable_collection;
+package t21_observable_collection;
 
 import java.util.Collection;
-import java.util.LinkedList;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.function.Consumer;
