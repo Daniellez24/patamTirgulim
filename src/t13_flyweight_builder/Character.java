@@ -1,6 +1,8 @@
-package t13_flyweight;
+package t13_flyweight_builder;
 
 public class Character {
+    //int row, col; ---/** not good! we would need an Object for EVERY cell in the matrix doc[][]
+    // we want to receive these as parameters(to the paint() method, for example)*/
     final char letter;
     final String font;
     final String color;

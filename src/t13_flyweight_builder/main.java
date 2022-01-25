@@ -1,4 +1,4 @@
-package t13_flyweight;
+package t13_flyweight_builder;
 
 public class main {
     public static void main(String[] args) {
@@ -13,11 +13,20 @@ public class main {
         To fix this we will use builder design pattern
         doc[13][2].setSize(4);*/
 
+        System.out.println(doc[10][5] == doc[13][2]); // true
 
         //WE fix it by using the builder pattern
         doc[13][2] = f.get(doc[13][2]).setSize(4).setColor("blue").build(f);
 
-        System.out.println(doc[10][5] == doc[13][2]);
-        System.out.println(doc[10][5].getSize());
+        // == checks references
+        System.out.println(doc[10][5] == doc[13][2]); // false
+        System.out.println(doc[10][5].getSize()); // 3
+
+        for (int i = 0; i < doc.length; i++) {
+            for (int j = 0; j < doc[i].length; j++) {
+                if(doc[i][j]!=null)
+                    doc[i][j].paint(i,j);
+            }
+        }
     }
 }

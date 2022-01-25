@@ -1,11 +1,11 @@
-package t13_flyweight;
+package t13_flyweight_builder;
 
 import java.util.HashMap;
 
 public class CharacterFlyweightFactory {
     /**
      * This design pattern checks if:
-     * given object A -> if he already exists return a referance
+     * given object A -> if he already exists return a reference
      * Else create new one
      */
     HashMap<String, Character> map;

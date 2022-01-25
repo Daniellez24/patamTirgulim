@@ -7,6 +7,7 @@ package t12_decorator;
  * Tomato for example does not affect both the price and the calories
  */
 public class FoodDecorator implements Food {
+    // this class implements Food, and also contains Food
     Food f;
 
     public FoodDecorator(Food f) {

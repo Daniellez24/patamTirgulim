@@ -14,7 +14,7 @@ public class Manager extends Employee {
     static HashSet<Employee> hasAManager = new HashSet<>();
 
     /**
-     * This list can contain Engineer or employee
+     * This list can contain Engineer or a Manager (any kind of Employee)
      **/
     List<Employee> employees;
 
@@ -26,18 +26,19 @@ public class Manager extends Employee {
      * Only add employee if he does not have a manager
      */
     public void addEmployee(Employee e) throws Exception {
-        if (hasAManager.contains(e) || fineMe(e)) {
+        if (hasAManager.contains(e) || findMe(e)) {
             throw new Exception("This employee already got a manager");
         }
-        this.employees = employees;
+        employees.add(e);
         hasAManager.add(e);
     }
 
     /**Check if there is a top level manager (he is employee that does not have  a boss)
      * meaning that he does not have a manager (CEO  for example)
      * */
-    private boolean fineMe(Employee e) {
+    private boolean findMe(Employee e) {
         /**This e is me*/
+        /*trying to add myself, and the base case of the recursion*/
         if(e == this){
             return true;
         }
@@ -45,7 +46,7 @@ public class Manager extends Employee {
         if(e.getClass() == Manager.class){
             Manager m = (Manager) e;
             for(Employee emp : m.employees){
-                if(fineMe(emp)){
+                if(findMe(emp)){
                     return true;
                 }
             }

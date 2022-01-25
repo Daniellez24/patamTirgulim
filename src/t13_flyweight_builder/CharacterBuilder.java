@@ -1,4 +1,4 @@
-package t13_flyweight;
+package t13_flyweight_builder;
 
 /**
  * This class is a little different from normal builder
