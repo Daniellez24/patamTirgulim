@@ -19,6 +19,7 @@ public class main {
         /**When p1/p4 changes so does p4/p1*/
         p1.bind(p4);
 
+        /**we want onChange to work everytime the val of a property has changed */
         p4.onChange(x -> System.out.println("P4 value has changed to "  + x));
 
         p1.set(100);

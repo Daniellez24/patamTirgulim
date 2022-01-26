@@ -5,6 +5,7 @@ import java.util.Observer;
 import java.util.function.Consumer;
 
 public class Property<T> extends Observable implements Observer {
+    // Property is both Observable AND Observer
     T val;
     private Consumer<T> c;
 
@@ -31,6 +32,8 @@ public class Property<T> extends Observable implements Observer {
     }
 
     public void set(T v) {
+        // we change the val and notify about a change only if val != v,
+        // in order to avoid circles in case they're equal
         if(val != v){
             val = v;
             if(c!= null){
